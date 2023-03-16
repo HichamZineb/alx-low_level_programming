@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
  * main - prints string
- * return: returns 0 if everything is ok
+ *
+ * Return: returns 0 if everything is ok
  */
 int main(void)
 
