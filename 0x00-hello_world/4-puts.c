@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  * main - prints string
+ * return: returns 0 if everything is ok
  */
 int main(void)
 
@@ -9,7 +10,3 @@ int main(void)
 	return (0);
 
 }
-
-/*
- * return - returns 0 if everything is ok
- */
