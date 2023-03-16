@@ -7,7 +7,6 @@
 int main(void)
 
 {
-	
 	char character;
 	int integer;
 	long int longinteger;
@@ -20,5 +19,4 @@ int main(void)
 	printf("Size of a long long int: %zu byte\(s)\n", sizeof(longlonginteger));
 	printf("Size of a float: %zu byte\(s)\n", sizeof(afloat));
 	return (0);
-
 }
