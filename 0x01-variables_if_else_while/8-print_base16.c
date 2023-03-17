@@ -12,7 +12,7 @@ int main(void)
 
 {
 	char nb = '0';
-	char ch = 'A';
+	char ch = 'a';
 	char newline = '\n';
 
 	while (nb <= '9')
@@ -20,7 +20,7 @@ int main(void)
 	putchar(nb);
 	nb++;
 	}
-	while (ch <= 'F')
+	while (ch <= 'f')
 	{
 	putchar (ch);
 	ch++;
