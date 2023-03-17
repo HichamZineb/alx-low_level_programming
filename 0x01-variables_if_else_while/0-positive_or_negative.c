@@ -5,7 +5,7 @@
 /**
  * main - prints if random number is negative, positive or is zero
  *
- * return: returns 0 if everything is ok
+ * Return: returns 0 if everything is ok
  */
 
 int main(void)
