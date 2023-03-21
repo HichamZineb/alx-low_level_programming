@@ -1,7 +1,7 @@
 #include <unistd.h>
 
-char print_alphabet(char c)
+void print_alphabet(void)
 
 {
-	return(write(1, &c, 1));
+	return;
 }
