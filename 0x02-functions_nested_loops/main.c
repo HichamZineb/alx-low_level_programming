@@ -1,7 +1,1 @@
-#include <unistd.h>
-
-void print_alphabet(void)
-
-{
-	return;
-}
+#include "main.h"
