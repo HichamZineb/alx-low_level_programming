@@ -1,20 +1,18 @@
 #include "main.h"
 
 /**
- * main - print alphabet
+ * print_alphabet - prints numbers
+ * - prints the alphabet
  *
- * Return: 0 if success
+ * Return: return is void
  */
-int main(void)
-
+void print_alphabet(void)
 {
-	char print_alphabet = 'a';
+	char c;
 
-		while (print_alphabet <= 'z')
+	for (c = 'a';c <= 'z'; c++)
 		{
-			_putchar(print_alphabet);
-			print_alphabet++;
+			_putchar(c);
 		}
 		_putchar('\n');
-	return (0);
 }
