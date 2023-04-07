@@ -1,0 +1,29 @@
+#include "main.h"
+
+/**
+ * _strstr - locates a substring
+ * @haystack: string
+ * @needle: substring
+ *
+ * Return: returns NULL
+ */
+char *_strstr(char *haystack, char *needle)
+
+{
+	for (; *haystack != '\0'; haystack++)
+	{
+		char *str1 = haystack;
+		char *str2 = needle;
+
+		while (*str1 == *str2 && *str2 != '\0')
+		{
+			str1++;
+			str2++;
+		}
+		if (*str2 == '\0')
+		{
+			return (haystack);
+		}
+	}
+	return (NULL);
+}
