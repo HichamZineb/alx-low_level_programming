@@ -21,22 +21,22 @@ char *argstostr(int ac, char **av)
 	{
 		for (j = 0; av[i][j]; j++)
 		{
-			l++;
+			k++;
 		}
-		l += ac;
+		k += ac;
 	}
-	conc = malloc((sizeof(char) * l) + ac + 1);
+	conc = malloc(sizeof(char) * k + 1);
 	if (conc == NULL)
 		return (NULL);
 	for (i = 0; i < ac; i++)
 	{
 		for (j = 0; av[i][j]; j++)
 		{
-			conc[k] = av[i][j];
-			k++;
+			conc[l] = av[i][j];
+			l++;
 		}
-		if (conc[k] == '\0')
-			conc[k++] = '\n';
+		if (conc[l] == '\0')
+			conc[l++] = '\n';
 	}
 	return (conc);
 }
