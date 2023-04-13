@@ -6,7 +6,7 @@
  * @min: minimum value
  * @max: maximum value
  *
- * Return: the array p
+ * Return: returns pointer to the array
  */
 int *array_range(int min, int max)
 
