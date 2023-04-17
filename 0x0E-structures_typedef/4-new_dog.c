@@ -2,6 +2,24 @@
 #include "dog.h"
 
 /**
+ * _strlen - length of string
+ * @s: string
+ *
+ * Return: length
+ */
+int _strlen(char *s)
+
+{
+	int i = 0;
+
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
+}
+
+/**
  * new_dog - creates a new dog
  * @name: dog name
  * @age: dog age
@@ -13,19 +31,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 {
 	dog_t *dog;
-	int i = 0, j = 0, lname, lowner;
+	int i, lname, lowner;
 
-	while (name[i] != '\0')
-	{
-		i++;
-	}
-	lname = i;
-
-	while (owner[j] != '\0')
-	{
-		j++;
-	}
-	lowner = j;
+	lname = _strlen(name);
+	lowner = _strlen(owner);
 
 	dog = malloc(sizeof(dog_t));
 	if (dog == NULL)
