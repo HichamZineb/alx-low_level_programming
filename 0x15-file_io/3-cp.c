@@ -78,7 +78,7 @@ int main(int argc, char *argv[])
 
 		wr = write(filet, buff, rd);
 
-		if (wr == -1)
+		if (filet == -1 || wr == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", argv[2]);
 			free(buff);
