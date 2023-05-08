@@ -36,7 +36,7 @@ char *buff_alloc(char *fileto)
 
 	buff = malloc(sizeof(char) * 1024);
 
-	if (!buff)
+	if (buff == NULL)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", fileto);
 		exit(99);
@@ -69,7 +69,7 @@ int main(int argc, char *argv[])
 	filet = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
 	do {
-		if (rd == -1)
+		if (filef == -1 || rd == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 			free(buff);
