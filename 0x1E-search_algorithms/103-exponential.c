@@ -14,7 +14,7 @@
 int binarysearch(int *array, size_t left, size_t right, int value)
 {
 	size_t mid = left;
-	int i;
+	size_t i;
 
 	if (!array)
 		return (-1);
@@ -46,7 +46,7 @@ int binarysearch(int *array, size_t left, size_t right, int value)
  */
 int exponential_search(int *array, size_t size, int value)
 {
-	int i = 1;
+	size_t i = 1;
 	int left, right;
 
 	if (!array)
@@ -57,7 +57,7 @@ int exponential_search(int *array, size_t size, int value)
 
 	while (array[i] <= value && i < size - 1)
 	{
-		printf("Value checked array[%d] = [%d]\n", i, array[i]);
+		printf("Value checked array[%ld] = [%d]\n", i, array[i]);
 		i = i * 2;
 	}
 
