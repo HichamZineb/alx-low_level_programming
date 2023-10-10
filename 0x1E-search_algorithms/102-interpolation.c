@@ -37,4 +37,5 @@ int interpolation_search(int *array, size_t size, int value)
 		else
 			return (x);
 	}
+	return (-1);
 }
