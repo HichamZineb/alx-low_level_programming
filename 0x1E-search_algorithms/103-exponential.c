@@ -16,7 +16,7 @@ int my_binary_search(int *array, size_t left, size_t right, int value)
 	size_t mid = left;
 	size_t i;
 
-	if (!array)
+	if (array == NULL)
 		return (-1);
 
 	while (left <= right)
@@ -53,7 +53,7 @@ int exponential_search(int *array, size_t size, int value)
 	size_t i = 1;
 	size_t left, right;
 
-	if (!array)
+	if (array == NULL)
 		return (-1);
 
 	if (array[0] != value)
