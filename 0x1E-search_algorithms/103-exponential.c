@@ -11,7 +11,7 @@
  *
  * Return: The first index where value is located or -1.
  */
-int binarysearch(int *array, size_t left, size_t right, int value)
+int my_binary_search(int *array, size_t left, size_t right, int value)
 {
 	size_t mid = left;
 	size_t i;
@@ -60,7 +60,7 @@ int exponential_search(int *array, size_t size, int value)
 	{
 		while (array[i] <= value && i < size)
 		{
-			printf("Value checked array[%ld] = [%d]\n", i, array[i]);
+			printf("Value checked array[%lu] = [%d]\n", i, array[i]);
 			i = i * 2;
 		}
 	}
@@ -70,5 +70,5 @@ int exponential_search(int *array, size_t size, int value)
 
 	printf("Value found between indexes [%d] and [%d]\n", left, right);
 
-	return (binarysearch(array, left, right, value));
+	return (my_binary_search(array, left, right, value));
 }
