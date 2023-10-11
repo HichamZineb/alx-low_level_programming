@@ -29,7 +29,11 @@ int binarysearch(int *array, size_t left, size_t right, int value)
 		mid = left + (right - left) / 2;
 		if (array[mid] == value)
 			return (mid);
-		left = mid + 1;
+
+		if (array[mid] > value)
+			right = mid - 1;
+		else
+			left = mid + 1;
 	}
 	return (-1);
 }
