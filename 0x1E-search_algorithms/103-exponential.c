@@ -52,13 +52,13 @@ int exponential_search(int *array, size_t size, int value)
 	if (!array)
 		return (-1);
 
-	/*if (array[0] == value)
-		return (array[0]);*/
-
-	while (array[i] <= value && i < size - 1)
+	if (array[0] == value)
 	{
-		printf("Value checked array[%ld] = [%d]\n", i, array[i]);
-		i = i * 2;
+		while (array[i] <= value && i < size - 1)
+		{
+			printf("Value checked array[%ld] = [%d]\n", i, array[i]);
+			i = i * 2;
+		}
 	}
 
 	left = i / 2;
